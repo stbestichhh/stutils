@@ -1,7 +1,7 @@
 {
-  "name": "@stlib/utils",
-  "version": "0.0.13",
-  "description": "Utilities for projects",
+  "name": "stutil",
+  "version": "0.0.1",
+  "description": "Utilities lib for Node.js",
   "main": "dist/stutil.js",
   "types": "stutil.d.ts",
   "repository": "https://github.com/stbestichhh/stutil",
