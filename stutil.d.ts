@@ -23,7 +23,7 @@ export const options: OptionsType;
 
 // linked list
 export class LinkedList<T> {
-  constructor();
+  constructor(values?: T[]);
   public add(value: T): void;
   public remove(value: T): boolean;
   public removeIdx(index: number): boolean;

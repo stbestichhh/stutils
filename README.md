@@ -17,6 +17,21 @@ $ yarn add stutils
 > **Node.js 18.x+** version must be installed in your OS.
 
 ### Usage
+#### Linked List
+```typescript
+class LinkedList<T> {
+  constructor(values?: T[]); // initialize empty list or with passed values
+  public add(value: T): void; // add value to the list
+  public remove(value: T): boolean; // remove value from the list
+  public removeIdx(index: number): boolean; // remove value from the list by index
+  public contains(value: T): boolean; // check if list contains a value
+  public indexOf(value: T): number; // get index of the value
+  public get(index: number): T; // get value by index
+  public getSize(): number; // get size of the list
+  public toArray(): Array<T>; // convert list to array
+}
+```
+
 #### File system utilities
 
 ```TypeScript

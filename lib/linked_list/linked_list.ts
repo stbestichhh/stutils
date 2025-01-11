@@ -4,9 +4,18 @@ export class LinkedList<T> {
   private head: Node<T> | null;
   private size: number;
 
-  constructor() {
+  constructor(values?: T[]) {
     this.head = null;
     this.size = 0;
+    this.initialize(values);
+  }
+
+  private initialize(values?: T[]) {
+    if (values && values.length) {
+      for (const value of values) {
+        this.add(value);
+      }
+    }
   }
 
   public add(value: T) {
