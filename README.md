@@ -1,16 +1,16 @@
 [![Node.js CI](https://github.com/stbestichhh/stutils/actions/workflows/node.js.yml/badge.svg)](https://github.com/stbestichhh/stutils/actions/workflows/node.js.yml)
-[![NPM Version](https://img.shields.io/npm/v/stutils)](https://www.npmjs.com/package/stutils)
+[![NPM Version](https://img.shields.io/npm/v/st-nodeutils)](https://www.npmjs.com/package/st-nodeutils)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-# stutils
+# @stlib/utils
 
 ## Getting started
 
 ### Installation
 
 ```shell
-$ yarn add stutils
+$ yarn add st-nodeutils
 ```
 
 > [!IMPORTANT]

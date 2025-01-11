@@ -1,5 +1,5 @@
 {
-  "name": "stutil",
+  "name": "st-nodeutils",
   "version": "0.0.1",
   "description": "Utilities lib for Node.js",
   "main": "dist/stutil.js",
