@@ -1,7 +1,6 @@
 import { LinkedList } from '../lib/linked_list';
 
 describe('LinkedList', () => {
-
   let linkedList: LinkedList<number>;
 
   beforeEach(() => {
@@ -11,6 +10,12 @@ describe('LinkedList', () => {
   test('should initialize with empty list', () => {
     expect(linkedList.getSize()).toBe(0);
     expect(linkedList.toArray()).toEqual([]);
+  });
+
+  test('should initialize with elements', () => {
+    const newList = new LinkedList<number>([1, 2, 3]);
+    expect(newList.getSize()).toBe(3);
+    expect(newList.toArray()).toEqual([1, 2, 3]);
   });
 
   test('should add a new element', () => {
@@ -34,6 +39,15 @@ describe('LinkedList', () => {
     expect(linkedList.remove(2)).toBe(true);
     expect(linkedList.getSize()).toBe(2);
     expect(linkedList.toArray()).toEqual([1, 3]);
+  });
+
+  test('should delete last element', () => {
+    linkedList.add(1);
+    linkedList.add(2);
+    linkedList.add(3);
+    expect(linkedList.remove()).toBe(true);
+    expect(linkedList.getSize()).toBe(2);
+    expect(linkedList.toArray()).toEqual([1, 2]);
   });
 
   test('should return false when removing non-existing value', () => {
