@@ -33,8 +33,11 @@ export class LinkedList<T> {
     this.size++;
   }
 
-  public remove(value: T) {
-    return this.removeByValue(value);
+  public remove(value?: T) {
+    if (value) {
+      return this.removeByValue(value);
+    }
+    return this.removeByIndex(this.size - 1);  
   }
 
   public removeIdx(index: number) {
