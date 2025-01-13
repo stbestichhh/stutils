@@ -1,7 +1,6 @@
 import { LinkedList } from '../lib/linked_list';
 
 describe('LinkedList', () => {
-
   let linkedList: LinkedList<number>;
 
   beforeEach(() => {
@@ -14,7 +13,7 @@ describe('LinkedList', () => {
   });
 
   test('should initialize with elements', () => {
-    let newList = new LinkedList<number>([1, 2, 3]);
+    const newList = new LinkedList<number>([1, 2, 3]);
     expect(newList.getSize()).toBe(3);
     expect(newList.toArray()).toEqual([1, 2, 3]);
   });

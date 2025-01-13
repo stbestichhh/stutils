@@ -37,7 +37,7 @@ export class LinkedList<T> {
     if (value) {
       return this.removeByValue(value);
     }
-    return this.removeByIndex(this.size - 1);  
+    return this.removeByIndex(this.size - 1);
   }
 
   public removeIdx(index: number) {
@@ -85,7 +85,10 @@ export class LinkedList<T> {
     }
 
     let current = this.head;
-    while (current.next && JSON.stringify(current.next.value) !== JSON.stringify(value)) {
+    while (
+      current.next &&
+      JSON.stringify(current.next.value) !== JSON.stringify(value)
+    ) {
       current = current.next;
     }
 
