@@ -22,7 +22,7 @@ $ yarn add st-nodeutils
 class LinkedList<T> {
   constructor(values?: T[]); // initialize empty list or with passed values
   public add(value: T): void; // add value to the list
-  public remove(value: T): boolean; // remove value from the list
+  public remove(value?: T): boolean; // remove last node or with the same value from the list
   public removeIdx(index: number): boolean; // remove value from the list by index
   public contains(value: T): boolean; // check if list contains a value
   public indexOf(value: T): number; // get index of the value
