@@ -32,6 +32,16 @@ class LinkedList<T> {
 }
 ```
 
+#### Arrays
+```typescript
+export class Arrays extends Array {
+  public static unique<T>(array: T[]): T[]; // remove duplicates
+  public static chunk<T>(array: T[], size: number): T[][]; // single array to chunks
+  public static asort<T extends string | number>(array: Array<T>): T[]; // sort in ascending order
+  public static dsort<T extends string | number>(array: Array<T>): T[]; // sort in descending order
+  public static toList<T>(array: T[]): LinkedList<T>; // conver to linked list
+}
+```
 #### File system utilities
 
 ```TypeScript
