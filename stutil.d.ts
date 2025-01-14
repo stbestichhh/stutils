@@ -33,3 +33,12 @@ export class LinkedList<T> {
   public getSize(): number;
   public toArray(): Array<T>;
 }
+
+// arrays
+export class Arrays extends Array {
+  public static unique<T>(array: T[]): T[];
+  public static chunk<T>(array: T[], size: number): T[][];
+  public static asort<T extends string | number>(array: Array<T>): T[];
+  public static dsort<T extends string | number>(array: Array<T>): T[];
+  public static toList<T>(array: T[]): LinkedList<T>;
+}
