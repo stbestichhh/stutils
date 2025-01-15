@@ -41,4 +41,5 @@ export class Arrays extends Array {
   public static asort<T extends string | number>(array: Array<T>): T[];
   public static dsort<T extends string | number>(array: Array<T>): T[];
   public static toList<T>(array: T[]): LinkedList<T>;
+  public static sum(array: number[], start: number = 0, end: number = array.length - 1): number; 
 }

@@ -39,7 +39,8 @@ export class Arrays extends Array {
   public static chunk<T>(array: T[], size: number): T[][]; // single array to chunks
   public static asort<T extends string | number>(array: Array<T>): T[]; // sort in ascending order
   public static dsort<T extends string | number>(array: Array<T>): T[]; // sort in descending order
-  public static toList<T>(array: T[]): LinkedList<T>; // conver to linked list
+  public static toList<T>(array: T[]): LinkedList<T>; // convert to linked list
+  public static sum(array: number[], start: number = 0, end: number = array.length - 1): number // sum all elements in bounds of array
 }
 ```
 #### File system utilities

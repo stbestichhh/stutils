@@ -83,4 +83,28 @@ describe('Arrays', () => {
       expect(list.toArray()).toEqual([]);
     });
   });
+
+  describe('sum', () => {
+    it('should return sum of all nums in array', () => {
+      const array = [1, 2, 3];
+      expect(Arrays.sum(array)).toBe(6);
+    });
+
+    it('should return zero sum on empty array', () => {
+      expect(Arrays.sum([])).toBe(0);
+    });
+
+    it('should count sum from index to index', () => {
+      const array = [1, 5, 7, 8, 3, 2, 9];
+      expect(Arrays.sum(array, 2)).toBe(29);
+      expect(Arrays.sum(array, 1, 5)).toBe(25);
+      expect(Arrays.sum(array, 0, 3)).toBe(21);
+    });
+
+    it('should throw out if bounds error while start or end indexes are invalid', () => {
+      expect(() => Arrays.sum([1, 2, 3], 4)).toThrow();
+      expect(() => Arrays.sum([1, 2, 3], 0, 4)).toThrow();
+      expect(() => Arrays.sum([1, 2, 3], 1, 0)).toThrow();
+    });
+  });
 });

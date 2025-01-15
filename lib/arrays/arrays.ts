@@ -39,4 +39,18 @@ export class Arrays extends Array {
   public static toList<T>(array: T[]): LinkedList<T> {
     return new LinkedList(array);
   }
+
+  public static sum(array: number[], start: number = 0, end: number = array.length - 1): number {
+    if (array.length === 0) return 0;
+
+    if (start < 0 || end >= array.length || start >= end) {
+      throw new RangeError('Indexes are out of array bounds');
+    }
+
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+      sum += array[i];
+    }
+    return sum;
+  }
 }
